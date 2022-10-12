@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-       public float jumpForce = 10;
+       public float jumpForce = 15;
 
        public bool isOnGround = false;
 
