@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RepeatBackGround : MonoBehaviour
 {
-     private float _xRange = 25;
+     private float _xRange = 18;
     // Start is called before the first frame update
     void Start()
     {
