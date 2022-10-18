@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
        public float jumpForce = 15;
 
        public bool isOnGround = false;
+       public bool isGameOver = false;
 
        private Rigidbody2D _playerRB;
 
@@ -35,6 +36,12 @@ public class PlayerController : MonoBehaviour
         {
             isOnGround = true;
             _playerAnim.SetBool("IsOnGround", true);
+        
+        }
+        else if(other.gameObject.CompareTag("Obstacle"))
+        {
+            isGameOver = true;
+            _playerAnim.SetTrigger("IsHit");
         }
     }
 }
